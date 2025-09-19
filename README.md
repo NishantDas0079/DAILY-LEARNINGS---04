@@ -402,3 +402,105 @@ dtype: int64
 
 
 # NumPy (17/09/25) 
+
+
+
+
+# Import Numpy Library
+import numpy as np
+import warnings
+warnings.filterwarnings("ignore")
+from IPython.display import Image
+
+
+Numpy Array Creation
+list1 = [10,20,30,40,50,60]
+list1
+
+# Display the type of an object
+type(list1)
+list
+#Convert list to Numpy Array
+arr1 = np.array(list1)
+arr1
+array([10, 20, 30, 40, 50, 60])
+#Memory address of an array object
+arr1.data
+
+# Display type of an object
+type(arr1)
+numpy.ndarray
+#Datatype of array
+arr1.dtype
+dtype('int32')
+# Convert Integer Array to FLOAT
+arr1.astype(float)
+
+# Generate evenly spaced numbers (space =1) between 0 to 10
+np.arange(0,10)
+
+# Generate numbers between 0 to 100 with a space of 10
+np.arange(0,100,10)
+
+# Generate numbers between 10 to 100 with a space of 10 in descending order
+np.arange(100, 10, -10)
+
+#Shape of Array
+arr3 = np.arange(0,10)
+arr3.shape
+
+arr3
+
+# Size of array
+arr3.size
+
+# Dimension 
+arr3.ndim
+
+# Datatype of object
+arr3.dtype
+
+# Bytes consumed by one element of an array object
+arr3.itemsize
+
+# Length of array
+len(arr3)
+
+# Generate an array of zeros
+np.zeros(10)
+
+# Generate an array of ones with given shape
+np.ones(10)
+
+# Repeat 10 five times in an array
+np.repeat(10,5)
+
+# Repeat each element in array 'a' thrice
+a= np.array([10,20,30])
+np.repeat(a,3)
+
+# Array of 10's
+np.full(5,10)
+
+# Generate array of Odd numbers
+ar1 = np.arange(1,20)
+ar1[ar1%2 ==1]
+
+# Generate array of even numbers
+ar1 = np.arange(1,20)
+ar1[ar1%2 == 0]
+
+# Generate evenly spaced 4 numbers between 10 to 20.
+np.linspace(10,20,4)
+
+# Generate evenly spaced 11 numbers between 10 to 20.
+np.linspace(10,20,11)
+
+# Create an array of random values
+np.random.random(4)
+
+# Generate an array of Random Integer numbers
+np.random.randint(0,500,5)
+
+# Generate an array of Random Integer numbers
+np.random.randint(0,500,10)
