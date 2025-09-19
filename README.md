@@ -504,3 +504,82 @@ np.random.randint(0,500,5)
 
 # Generate an array of Random Integer numbers
 np.random.randint(0,500,10)
+
+
+
+
+
+# Linear Algebra (17/09/25) 
+
+
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
+v = [3,4]
+u = [1,2,3]
+v ,u
+
+type(v)
+
+w = np.array([9,5,7])
+type(w)
+
+w.shape[0]
+
+w.shape
+
+
+# Reading elements from an array
+a = np.array([7,5,3,9,0,2])
+a[0]
+
+a[1:]
+
+a[1:4]
+
+a[-1]
+
+a[-3]
+
+a[-6]
+
+a[-3:-1]
+
+
+
+# Plotting a Vector
+
+
+v = [3,4]
+u = [1,2,3]
+plt.plot (v)
+
+plt.plot([0,v[0]] , [0,v[1]])
+
+# Plot 2D Vector
+
+plt.plot([0,v[0]] , [0,v[1]])
+plt.plot([8,-8] , [0,0] , 'k--')
+plt.plot([0,0] , [8,-8] , 'k--')
+plt.grid()
+plt.axis((-8, 8, -8, 8))
+plt.show()
+
+
+# Plot 3D Vector
+
+fig = plt.figure()
+ax = Axes3D(fig)
+ax.plot([0,u[0]],[0,u[1]],[0,u[2]])
+plt.axis('equal')
+ax.plot([0, 0],[0, 0],[-5, 5],'k--')
+ax.plot([0, 0],[-5, 5],[0, 0],'k--')
+ax.plot([-5, 5],[0, 0],[0, 0],'k--')
+plt.show()
+
+
+
