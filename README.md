@@ -261,7 +261,7 @@ class Car implements Vehicle {
 
 # PANDAS (17/09/25) 
 
-
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -281,7 +281,7 @@ dtype: int32
 #Datatype of Series
 s1.dtype
 dtype('int32')
-
+```
 # Number of bytes consumed by Series
 s1.nbytes
 
