@@ -283,20 +283,29 @@ s1.dtype
 dtype('int32')
 ```
 # Number of bytes consumed by Series
+```
 s1.nbytes
+```
 
 # Shape of the Series
+```
 s1.shape
+```
 
 # number of dimensions
+```
 s1.ndim
+```
 
 # Length of Series
+```
 len(s1)
+
 
 s1.count()
 
 s1.size
+```
 
 # Create series from List 
 s0 = pd.Series([1,2,3],index = ['a','b','c'])
